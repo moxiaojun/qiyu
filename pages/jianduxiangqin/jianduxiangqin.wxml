@@ -1,0 +1,61 @@
+<!--pages/jianduxiangqin/jianduxiangqin.wxml-->  
+<van-sticky>
+  <view class="head">重庆碧桂园江景二期</view>
+</van-sticky>
+<view class="content p-20">
+  <text class="p-10 font-s-14 color-165">基本资料</text>
+  <view class="card border-ra">
+    <van-cell-group>
+      <van-field
+      model:value="{{ info.name }}"
+        label="受监督人"
+        readonly
+      />
+      <van-field
+        model:value="{{ info.date }}"
+        label="报告日期" 
+        border="{{ false }}" 
+        readonly
+      />
+      <van-calendar show="{{ show }}" bind:close="onClose" bind:select="onConfirm" show-confirm="{{ false }}"/>
+      <van-field
+        model:value="{{  info.info }}"
+        label="工作内容"
+        readonly
+      />
+    </van-cell-group> 
+  </view>
+  <text class="p-10 font-s-14 color-165">质量监督描述</text>
+  <view class="card border-ra p-20 font-s-14"> {{ info.dec}}</view>
+  <text class="p-10 font-s-14 color-165">照片上传</text>
+  <view class="m-t m-b"> 
+    <van-image width="100" height="100" wx:for="{{info.img}}" wx:for-index="idx" wx:key="idx" src="{{item}}" />
+  </view> 
+  <view class="m-t">
+    <text class=" p-10 font-s-14 color-165">工作评价</text>
+    <van-rate
+      value="{{  info.rate }}"
+      icon="like"
+      void-icon="like-o" 
+    />
+  </view>
+  <view class="huifu p-10" wx:if="{{info.isMe}}"> 
+    <view class="desc-color">我的回复：</view>
+    <view class="m-t">
+      <view>2021-04-25 18:16</view>
+      <view>这个监督显示得不对，我当天干了好多事情。</view>
+    </view>
+    <view class="m-t">
+      <view>2021-04-25 19:16</view>
+      <view>这个监督显示得不对，我当天干了好多事情。</view>
+    </view>
+    <view class="card m-t border-ra">
+      <textarea model:value="{{ dec}}" class="font-s-14 p-20" placeholder="请输入回复内容" ></textarea> 
+    </view>
+    <view class="btn-add m-t" bindtap="submit">回复内容</view>
+  </view> 
+  <view wx:if="{{!info.isMe}}">
+    <view class="btn-add m-t" bindtap="back">返回</view>
+  </view>
+</view>
+

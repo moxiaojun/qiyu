@@ -1,0 +1,17 @@
+{
+  "navigationBarBackgroundColor":"#0094e0",
+  "navigationBarTextStyle": "white",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light",
+  "usingComponents": {
+    "van-image":"@vant/weapp/image/index",
+    "van-button": "@vant/weapp/button/index", 
+    "van-icon": "@vant/weapp/icon/index", 
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-panel": "@vant/weapp/panel/index",
+    "van-tag": "@vant/weapp/tag/index"
+  }
+}

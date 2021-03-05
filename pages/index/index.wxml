@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container"> 
+  <van-empty
+  wx:if="{{list.length<1 }}"
+    class="custom-image"
+    image="https://img.yzcdn.cn/vant/custom-empty-image.png"
+    description="您还未添加任务项目"
+  />
+ 
+  <van-panel custom-class="border-ra m-b" wx:for="{{list}}" wx:for-index="idx" wx:key="idx"  >
+    <van-cell slot="header" title="{{item.name}}" value-class="{{StateColor[item.state]}}">{{State[item.state]}} </van-cell>
+    <view class="card card-p font-s-14 desc-color" >
+      <van-image image-class="card-img" width="58" height="54" src="{{item.image}}" />
+      <view class="card-content">
+        <van-row custom-class="m-b">项目经理：{{item.manager}}</van-row>
+        <van-row >起止时间：{{item.time}}</van-row> 
+      </view>  
+    </view>
+    <view class="flex-center card-p font-s-14 link-color">
+      <view bindtap="addressClick"> <van-icon name="location-o" /> {{item.address}} </view>  
+      <van-button size="small" round  type="primary" id="{{item.id}}"  bind:click="gotoPage">进入</van-button>
+    </view> 
+  </van-panel>  
+</view>

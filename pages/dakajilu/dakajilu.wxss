@@ -1,0 +1,25 @@
+/* pages/dakajilu/dakajilu.wxss */
+page{
+  background-color: #EEE;
+}
+.head{
+  background-color: #FFF;
+}
+.capacity{
+  margin: 20rpx; 
+  background-color: #FFF;
+}
+.title{
+  display: flex;
+  padding: 20rpx 28rpx;
+  font-size: 16px;
+  font-weight: 800;
+  border-bottom: 1px solid #EEE;
+}
+.tip{
+  color: #00a01a;
+  margin-left: 20rpx;
+}
+.head .head-value{
+  color:#0094e0 ;
+}

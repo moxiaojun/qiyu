@@ -1,0 +1,39 @@
+/* pages/workovertime/workovertime.wxss */
+page {
+  background-color: #EEE; 
+}
+
+.head {
+  background-color: #0094e0;
+  height: 7.8rem;
+}
+
+.title {
+  color: #FFF; 
+}
+
+.font-46 {
+  font-size: 46px;
+}
+
+.head-content {
+  font-size: 13px;
+  margin: 10rpx 20rpx;
+  padding: 30rpx 16rpx;
+  background-color: #FFF;
+}
+.centent{ 
+  margin: 4.4rem 20rpx; 
+}
+.centent .title{
+  color: #333;
+}
+.centent .flex .adopt{ 
+  color: #b0b0b0;
+}
+.centent .flex .examine{ 
+  color: #e8b400;
+}
+.centent .flex .refuse{ 
+  color: #d13b00;
+}

@@ -1,0 +1,9 @@
+<!--pages/common/camera/camera.wxml-->
+<van-toast id="van-toast" />
+<camera device-position="front" wx:if="{{show}}" flash="off" binderror="error" style="width: 100%; height: {{Height}}px;"></camera>
+<van-image width="100%" height="{{Height}}px" mode="widthFix" src="{{src}}"></van-image>
+<view class="bottom"> 
+  <van-button custom-class="btn" type="default" size="small" round bind:click="takePhoto" wx:if="{{show}}">拍照</van-button>
+  <van-button custom-class="btn" type="default" size="small" round bind:click="resetPhoto" wx:if="{{!show}}">重拍</van-button>
+  <van-button custom-class="btn" type="primary" size="small" loading="{{uping}}" round bind:click="uploadPhoto">上传</van-button>
+</view>

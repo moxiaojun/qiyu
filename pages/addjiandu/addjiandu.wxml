@@ -1,0 +1,50 @@
+<!--pages/addjiandu/addjiandu.wxml-->
+<van-sticky>
+  <view class="head">重庆碧桂园江景二期</view>
+</van-sticky>
+<view class="content p-20">
+  <text class="p-10 font-s-14 color-165">基本资料</text>
+  <view class="card border-ra">
+    <van-cell-group>
+      <van-field
+      model:value="{{  name }}"
+        label="受监督人"
+        placeholder="请输入受监督人姓名" 
+      />
+      <van-field
+        model:value="{{  date }}"
+        label="报告日期"
+        placeholder="请选择日期" 
+        border="{{ false }}"
+        bind:click-input="onDisplay"  
+        readonly
+      />
+      <van-calendar show="{{ show }}" bind:close="onClose" bind:select="onConfirm" show-confirm="{{ false }}"/>
+      <van-field
+        model:value="{{  info }}"
+        label="工作内容"
+        placeholder="比如 扎钢筋" 
+      />
+    </van-cell-group> 
+  </view>
+  <text class="p-10 font-s-14 color-165">质量监督描述</text>
+  <view class="card border-ra">
+    <textarea model:value="{{ dec}}" class="font-s-14 p-20" placeholder="请输入当天工作的描述信息" ></textarea> 
+  </view>
+  <text class="p-10 font-s-14 color-165">照片上传</text>
+  <view class="m-t m-b">
+    <van-uploader file-list="{{ fileList }}" bind:after-read="afterRead"  />
+  </view>
+  <text class=" p-10 font-s-14 color-165">工作评价</text>
+  <view class="m-t">
+    <van-rate
+      value="{{  rate }}"
+      icon="like"
+      void-icon="like-o"
+      bind:change="onChangeRate"
+    />
+  </view>
+</view>
+<view class="bottom"> 
+  <view class="btn-add" bindtap="submit">提交</view>
+</view>

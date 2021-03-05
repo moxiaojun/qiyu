@@ -1,0 +1,90 @@
+/* pages/project/project.wxss */
+
+page {
+  background-color: #eeeeee;
+}
+
+.header {
+  color: #fff;
+}
+
+.card {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.card-content {
+  margin-left: 20rpx;
+}
+
+.card-img {
+  border-radius: 8%;
+}
+
+.content {
+  background-color: #eeeeee;
+}
+
+.capacity {
+  background-color: #FFF;
+}
+
+.iconfont {
+  font-size: 40px;
+  color: #007df1;
+  margin-bottom: 20rpx;
+}
+
+.icon-region {
+  color: rgb(0, 199, 90);
+}
+
+.icon-queqin {
+  color: rgb(255, 60, 0);
+}
+
+.icon-jiaban2,
+.icon-shujujianguan {
+  color: rgb(96, 0, 175);
+}
+
+.icon-data-view,
+.icon-jianguanfengkong {
+  color: rgb(17, 113, 202);
+}
+
+.icon-survey,
+.icon-yinzhangrenzheng {
+  color: rgb(0, 77, 179);
+}
+
+.icon-bingtutubiao {
+  color: rgb(96, 0, 175);
+}
+
+.border-t {
+  border-top: 20rpx solid #eeeeee;
+}
+
+.tab-icon {
+  font-size: 26px;
+  margin: 0;
+  color: rgb(136, 136, 136);
+}
+
+.productText { 
+  font-size: 14px;
+  line-height: 36rpx;
+  text-overflow: ellipsis;
+  z-index: -1;
+  display: -webkit-box;
+  word-break: break-all; 
+  -webkit-box-orient: vertical; 
+  -webkit-line-clamp: 3; 
+  overflow: hidden;
+}

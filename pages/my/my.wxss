@@ -1,0 +1,30 @@
+/* pages/my/my.wxss */
+page {
+  background-color: #eee;
+}
+.header{
+  color: #fff;
+}
+.card{
+  display: flex;
+}
+.flex-center{
+  display: flex;
+  justify-content: space-between;
+  align-items:center
+}
+.card-content{
+  margin-left: 20rpx; 
+}
+.card-img{
+  border-radius: 8%;
+}
+.iconfont{
+  width: 20rpx;
+  font-size: 40px;
+  color: #007df1;
+  margin-bottom: 20rpx;
+}
+.cell-title{
+  margin-left: 16rpx;
+}

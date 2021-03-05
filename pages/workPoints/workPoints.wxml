@@ -1,0 +1,36 @@
+<!--pages/workPoints/workPoints.wxml-->
+<view class="head">
+    <view class="head-cell">重庆碧桂园江景二期（张晓明）</view>
+    <view class="head-cell">  
+      <van-row>
+        <van-col span="12">我的工分 :<text class="p-l font-s-28">2000</text></van-col>
+        <van-col span="12">总工分 :<text class="p-l font-s-28">100000</text></van-col>
+      </van-row> 
+    </view> 
+    <view class="head-cell">
+      <van-row>
+        <van-col span="12">出勤天数 :<text class="p-l">12</text></van-col>
+        <van-col span="12" bindtap="gotoWorkovertime" >加班时长 :<text class="p-l work-color">80</text></van-col>
+      </van-row>
+    </view>
+</view>
+<view class="content">
+  <van-tabs nav-class="nav" color="#0094e0" tab-class="tab" active="{{ active }}" bind:change="onChange">
+    <van-tab title-style="" title="上班积分" >
+      <view class="tab-content">
+        <van-cell  wx:for="{{workList}}"  wx:key="id" >
+          <view slot="title">{{item.date}}    上班{{item.onwork}}  下班{{item.offwork}}</view>
+          <view slot="right-icon" class="desc-color"><text class="work-color">+{{item.integral}} </text><van-icon name="arrow" /></view>
+        </van-cell> 
+      </view>
+    </van-tab>
+    <van-tab title="加班积分">
+      <view class="tab-content">
+        <van-cell wx:for="{{overWorkList}}" wx:key="id" >
+          <view slot="title">{{item.date}}    加班{{item.onwork}}-{{item.offwork}}</view>
+          <view slot="right-icon" class="desc-color"><text class="work-color">+{{item.integral}} </text> <van-icon name="arrow" /></view>
+        </van-cell>
+      </view>
+    </van-tab>
+  </van-tabs>
+</view>

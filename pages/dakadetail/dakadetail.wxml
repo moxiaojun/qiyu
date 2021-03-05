@@ -1,0 +1,30 @@
+<!--pages/dakadetail/dakadetail.wxml-->
+<view class="head">
+  <view class="font-s-14">重庆碧桂园江景二期</view> 
+</view>
+<view class="card p-20"> 
+  <view class="title"><text >{{info.date}}</text> {{info.name}}  <text>{{levelText[info.level]}}</text></view>
+  <view class="content">
+    <view class="lable desc-color">上班时间</view>
+    <view>
+      <view class="m-b">{{info.onWork.time}} {{info.onWork.state=="normal"?"正常打卡":"补卡"}}</view>
+      <view class="link-color"><van-icon name="location" /> {{info.onWork.address?info.onWork.address:"无定位"}}</view>
+    </view> 
+  </view>
+  <view class="content">
+    <view class="lable desc-color">下班时间</view>
+    <view>
+      <view class="m-b">{{info.onWork.time}} {{info.offWork.state=="normal"?"正常打卡":"补卡"}}</view>
+      <view class="link-color"><van-icon name="location" /> {{info.offWork.address?info.offWork.address:"无定位"}}</view>
+    </view>
+    
+  </view>
+  <view class="content">
+    <view class="lable desc-color">下班照片</view>
+    <view><van-image image-class="card-img" width="158" height="220" src="{{info.onWork.img}}" /></view> 
+  </view>
+  <view class="content">
+    <view class="lable desc-color">下班照片</view>
+    <view><van-image image-class="card-img" width="158" height="220" src="{{info.offWork.img}}" /></view> 
+  </view>
+</view>

@@ -1,0 +1,4 @@
+/* pages/queqin/queqin.wxss */
+.calendar {
+  --calendar-height: 500px;
+}

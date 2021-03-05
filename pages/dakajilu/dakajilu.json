@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "打卡记录",
+  "navigationBarBackgroundColor":"#0094e0",
+  "navigationBarTextStyle": "white",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light",
+  "usingComponents": {
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index"
+  }
+}

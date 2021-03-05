@@ -1,0 +1,89 @@
+/**app.wxss**/
+@import '/icon/icon.wxss';
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+  padding: 20rpx 0;
+  box-sizing: border-box;
+} 
+.color-165{
+  color: rgb(165, 165, 165);
+}
+.card-p{
+  padding: 20rpx;
+}
+.bg-blue{
+  background-color: #0094e0;
+}
+.font-s-14{
+  font-size: 14px;
+}
+.font-s-20{
+  font-size: 20px;
+}
+.font-s-28{
+  font-size: 28px;
+}
+.p-10{
+  padding: 10rpx;
+}
+.p-20{
+  padding: 20rpx;
+}
+.p-r{
+  padding-right: 20rpx;
+}
+.p-l{
+  padding-left: 20rpx;
+}
+.m-t{
+  margin-top: 20rpx;
+}
+.m-r-10{
+ margin-right: 10rpx;
+}
+.m-r{
+  margin-right: 20rpx;
+ }
+.m-20{
+  margin: 20rpx;
+}
+.border-b{
+  border-bottom: 20rpx solid #eee;
+}
+.border-ra{
+  border-radius: .7rem;
+  overflow: hidden;
+}
+.desc-color{
+  color: rgb(138, 138, 138);
+}
+.link-color{
+  color: rgb(4, 112, 161);
+}
+.warn-color{
+  color: rgb(211, 155, 0);
+}
+.work-color{
+  color: rgb(255, 23, 23);
+}
+.m-b{
+  margin-bottom: 20rpx;
+}
+.card-title{
+  font-size: 14px;
+  line-height: 36px;
+  border-bottom:1px solid #eee;
+  margin-bottom: 10rpx;
+}
+.center{
+  text-align: center;
+} 
+.card{
+  display: flex;
+}
+.flex{
+  display: flex;
+}

@@ -1,0 +1,25 @@
+<!--pages/workovertime/workovertime.wxml-->
+<view class="head">
+  <view class="title m-b p-20">重庆碧桂园二期（张晓明）</view>
+  <view class="head-content border-ra center">
+    <view class="desc-color m-b">加班时数</view>
+    <van-row gutter="20">
+      <van-col span="12">
+        <view class="font-s-28">20小时</view>
+        <view class="m-t font-s-14">审核通过</view>
+      </van-col>
+      <van-col span="12">
+        <view class="font-s-28">10小时</view>
+        <view class=" m-t font-s-14">审核未过</view>
+      </van-col>
+    </van-row>
+  </view>
+</view>
+<view class="centent border-ra">
+  <van-cell center title-class="title" wx:for="{{list}}" wx:key="id">
+    <view slot="title">{{item.dec}}</view>
+    <view slot="right-icon" class="flex">
+      <text class="{{item.state}}">{{state[item.state]}} </text>
+    </view>
+  </van-cell>
+</view>

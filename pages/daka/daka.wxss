@@ -1,0 +1,79 @@
+/* pages/daka/daka.wxss */
+@import '/icon/icon.wxss';
+page{
+  background-color: #EEE;
+  margin-bottom: 3.2rem;
+} 
+.tab-icon{
+  font-size: 26px;
+  margin: 0;
+  color: rgb(136, 136, 136);
+}
+.heard-img{
+  margin-right: 10rpx;
+  background-color: #EEE;
+}
+.daka-time{
+  font-size: 34px; 
+}
+.capacity-daka{
+  background-color: #FFF; 
+  padding: 3.6rem 0;
+  margin-right: 20rpx;
+  margin-left: 20rpx;
+}
+.daka{
+  width: 10rem;
+  height: 10rem;
+  font-size: 16px;
+  color: #FFF;
+  margin:20rpx auto;
+  background-color: #07c160;
+  border-radius: 50%;
+  text-align: center; 
+}
+.lateWork{
+  background-color: #eb8500;
+}
+.onWork,.offWork{
+  background-color: #07c160;
+} 
+.daka-dcs{
+  color: #9f9f9f;
+  font-size: 12px;
+}
+.icon-shualian{
+  font-size: 26px;
+  padding-top: 36rpx; 
+}
+.round{
+  width: 48rpx;
+  height: 48rpx;
+  color: #FFF;
+  text-align: center;
+  line-height: 48rpx;
+  background-color:#07c160;
+  border-radius: 50%;
+  margin-right: 10rpx; 
+}
+.cell-text{
+  font-size: 14px;
+  font-weight: 500; 
+}
+.round-text{
+  color: #007cdb;
+}
+.list {
+  margin: 20rpx; 
+}
+.list .group{
+  font-size: 14px; 
+  padding: 16rpx 8rpx;
+  margin-bottom: 20rpx;
+  background-color: #FFF;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+.list .group .cell{
+  margin: 1rpx 0;
+}

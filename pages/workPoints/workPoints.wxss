@@ -1,0 +1,27 @@
+/* pages/workPoints/workPoints.wxss */
+page{
+  background-color: #EEE;
+}
+.head{
+  background-color: #0094e0; 
+  color: #FFF; 
+}
+.head-cell{
+  padding: 20rpx;
+  border-bottom: 1px solid #0ba0ff;
+} 
+.content{
+  margin: 20rpx;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.content .nav{
+  /* background-color: #EEE; */
+  
+}
+.content .nav .tab{ 
+  background-color: #EEE; 
+} 
+.content .nav .tab-content{
+  padding: 20rpx;
+}

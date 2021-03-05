@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "打卡详情",
+  "navigationBarBackgroundColor":"#0094e0",
+  "navigationBarTextStyle": "white",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light",
+  "usingComponents": {
+    "van-icon": "@vant/weapp/icon/index",
+    "van-image": "@vant/weapp/image/index" 
+  }
+}

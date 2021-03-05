@@ -1,0 +1,64 @@
+<!--pages/daka/daka.wxml-->
+<view>
+  <view class=" card-p border-ra">
+    <van-cell-group>
+      <van-cell center title="张晓明" label="一级工" border="{{ false }}">
+        <van-image slot="icon" custom-class="heard-img" round width="2.8rem" height="2.8rem"
+          src="https://img.yzcdn.cn/vant/cat.jpeg" />
+        <van-button bind:click="todaka" slot="right-icon" size="small" round type="primary">记录</van-button>
+      </van-cell>
+    </van-cell-group>
+  </view>
+  <view class="capacity-daka card-p border-ra center"> 
+    <view class="daka {{dakaState}}" bindtap="onclick">
+      <view class="iconfont icon-shualian m-b"></view>
+      <view class="daka-time m-b">{{curTime}}</view>
+      <view>{{workTxt[dakaState]}}</view>
+    </view>
+    <view class="daka-dcs" wx:if="{{inRange}}">
+      <van-icon color="#07c160" name="checked" />
+      已进入考勤范围：<text class="round-text">{{project.address}}</text>
+    </view> 
+    <view class="daka-dcs" wx:if="{{!inRange}}">
+      <van-icon name="warning" color="#eb5700" />
+      您不在考勤范围：<text class="round-text">{{project.address}}  距离{{distance-project.range}}米</text>
+    </view> 
+  </view>
+  <view class="list m-t border-ra"> 
+    <van-cell-group custom-class="group">
+      <van-cell custom-class="cell" border="{{ false }}">
+        <view slot="title" class="cell-text">上工打卡08:20</view>
+        <view slot="icon" class="round">上</view>
+        <view slot="right-icon" class="round-text"><van-icon name="location" />深圳市龙岗区坂田创意...</view>
+      </van-cell>
+      <van-cell custom-class="cell"  border="{{ false }}">
+        <view slot="title" class="cell-text">下工打卡08:20</view>
+        <view slot="icon" class="round">下</view>
+        <view slot="right-icon" class="round-text"><van-icon name="location" />深圳市龙岗区坂田创意...</view>
+      </van-cell>
+    </van-cell-group>
+    <van-cell-group custom-class="group">
+      <van-cell custom-class="cell" border="{{ false }}">
+        <view slot="title" class="cell-text">上工打卡08:20</view>
+        <view slot="icon" class="round">上</view>
+        <view slot="right-icon" class="round-text"><van-icon name="location" />深圳市龙岗区坂田创意...</view>
+      </van-cell>
+      <van-cell custom-class="cell"  border="{{ false }}">
+        <view slot="title" class="cell-text">下工打卡08:20</view>
+        <view slot="icon" class="round">下</view>
+        <view slot="right-icon" class="round-text"><van-icon name="location" />深圳市龙岗区坂田创意...</view>
+      </van-cell>
+    </van-cell-group>
+  </view>
+  <van-tabbar active="{{ active }}" bind:change="onChange">
+    <van-tabbar-item>
+      <view slot="icon" class="iconfont icon-region tab-icon"></view>打卡
+    </van-tabbar-item>
+    <van-tabbar-item>
+      <view slot="icon" class="iconfont icon-buka tab-icon"></view>补卡
+    </van-tabbar-item>
+    <van-tabbar-item>
+      <view slot="icon" class="iconfont icon-jiaban tab-icon"></view>加班
+    </van-tabbar-item>
+  </van-tabbar>
+</view>

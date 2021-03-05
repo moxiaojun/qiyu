@@ -1,0 +1,15 @@
+/* pages/workReportList/workReportList.wxss */
+page{
+  background-color: #EEE;
+}
+.head{
+  background-color: #FFF;
+}
+.content .cell{
+  background-color: #FFF;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+.content .title{
+  font-weight: 800;
+}

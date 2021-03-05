@@ -1,0 +1,29 @@
+/**index.wxss**/
+page{
+  background-color: #eeeeee; 
+}
+.container{
+  background-color: #eeeeee;
+  padding: 20rpx;
+}
+.card .card-img{
+  border-radius: .5rem;
+  overflow: hidden;
+}
+.flex-center{
+  display: flex;
+  justify-content: space-between;
+  align-items:center
+}
+.card-content{
+  margin-left: 20rpx; 
+}
+.container .build{
+  color: rgb(236, 95, 0);
+}
+.container .stop{
+  color: rgb(168, 168, 168);
+}
+.container .complete{
+  color: rgb(14, 173, 0);
+}

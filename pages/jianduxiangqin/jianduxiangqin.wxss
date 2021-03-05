@@ -1,0 +1,43 @@
+/* pages/jianduxiangqin/jianduxiangqin.wxss */
+page{
+  background-color: #EEE;
+}
+.head{
+  background-color: #0094e0;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0 20rpx;
+  color: #FFF;
+}
+
+.card{
+  background-color: #FFF;
+  margin: 20rpx 0;
+}
+.content{
+  margin-bottom: .5rem;
+}
+.huifu{
+  margin-top: 40rpx;
+  padding-bottom: 20rpx;
+  border-top: solid 1px #ddd;
+  line-height: 44rpx;
+  font-size: 14px;
+  color: rgb(139, 139, 139);
+}
+.bottom { 
+  display: block;
+  width: 100%;  
+  position: fixed;
+  bottom: 10rpx; 
+  padding: 20rpx; 
+}
+.btn-add{  
+  width: 95%;
+  color: #FFF;
+  text-align: center;
+  height: 72rpx;
+  line-height: 72rpx;
+  background-color: #0094e0;
+  border-radius: 1.6rem;
+}

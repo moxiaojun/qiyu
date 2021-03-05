@@ -1,0 +1,45 @@
+<!--pages/dakajilu/dakajilu.wxml-->
+<view class="head">
+  <van-cell-group border="{{false}}">
+    <van-cell value-class="head-value" value="共计{{total}}天">
+      <view slot="title">重庆碧桂园江景二期(张晓明)</view>
+    </van-cell>
+  </van-cell-group>
+</view>
+<view class="capacity border-ra" wx:for="{{list}}" wx:for-index="index" wx:key="index">
+  <view class="title">{{item.date}} <view class="tip">{{item.list.length}}天</view>
+  </view>
+  <van-cell-group border="{{false}}">
+    <van-cell is-link wx:for="{{item.list}}" wx:for-index="idx" wx:for-item="subItem"  wx:key="idx" url="/pages/dakadetail/dakadetail?id={{subItem.id}}">
+      <view slot="title">
+        {{subItem.date}}
+        <text class="p-l"> 上班 <text class="warn-color"> {{subItem.onWork.time ? subItem.onWork.time : "未打卡"}} </text></text>
+        <text class="p-l">下班 <text class="warn-color">{{subItem.offWork.time ? subItem.offWork.time : "未打卡"}}</text></text>
+      </view>
+    </van-cell>
+  </van-cell-group>
+</view>
+<!-- <view class="capacity border-ra">
+  <view class="title">2020/03 <view class="tip">3天</view>
+  </view>
+  <van-cell-group border="{{false}}">
+    <van-cell is-link>
+      <view slot="title">2020-03-03 上班08:00 下班20:00</view>
+    </van-cell>
+    <van-cell is-link>
+      <view slot="title">2020-03-03 上班08:00 下班20:00</view>
+    </van-cell>
+    <van-cell is-link>
+      <view slot="title">2020-03-03 上班08:00 下班20:00</view>
+    </van-cell>
+    <van-cell is-link>
+      <view slot="title">2020-03-03 上班08:00 下班20:00</view>
+    </van-cell>
+    <van-cell is-link>
+      <view slot="title">2020-03-03 上班08:00 下班20:00</view>
+    </van-cell>
+    <van-cell is-link>
+      <view slot="title">2020-03-03 上班08:00 下班20:00</view>
+    </van-cell>
+  </van-cell-group>
+</view> -->

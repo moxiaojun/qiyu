@@ -1,0 +1,17 @@
+{
+  "navigationBarTitleText": "质量监督详情",
+  "navigationBarBackgroundColor":"#0094e0",
+  "navigationBarTextStyle": "white",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light",
+  "usingComponents": {
+    "van-field": "@vant/weapp/field/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-calendar": "@vant/weapp/calendar/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-uploader": "@vant/weapp/uploader/index" ,
+    "van-rate": "@vant/weapp/rate/index",
+    "van-sticky": "@vant/weapp/sticky/index",
+    "van-image": "@vant/weapp/image/index"
+  }
+}

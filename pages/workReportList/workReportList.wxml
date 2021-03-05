@@ -1,0 +1,23 @@
+<!--pages/workReportList/workReportList.wxml-->
+<van-sticky>
+  <view class="head">
+    <van-cell-group border="{{false}}">
+      <van-cell value-class="head-value" value="共计{{total}}条">
+        <view slot="title">{{project.name}}(张晓明)</view>
+      </van-cell>
+    </van-cell-group>
+  </view>
+</van-sticky>
+<view class="content m-20">
+  <van-cell 
+    custom-class="cell p-20" 
+    center 
+    wx:for="{{list}}" 
+    wx:key="id" 
+    title="{{item.date}}" 
+    title-class="title"
+    label="{{item.decs}}" 
+    url="/pages/workReport/workReport?operate=detail&project={{projectStr}}"
+    is-link
+    ></van-cell>
+</view>

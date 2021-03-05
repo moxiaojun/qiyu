@@ -1,0 +1,85 @@
+<!--pages/project/project.wxml-->
+<view class="header bg-blue">
+  <van-row>
+    <view class="card card-p font-s-14">
+      <van-image image-class="card-img" width="88" height="88" src="{{info.image}}" />
+      <view class="card-content">
+        <van-row custom-class="m-b font-s-12">
+          <view class="flex-center">
+            <view>{{info.person}}</view>
+            <view>
+              <van-icon color="#00ff60" size="12" name="checked" /> 在建</view>
+          </view>
+        </van-row>
+        <view class="productText" bindtap="showPopup">{{info.dec}}</view>
+        <van-popup position="top" custom-style="height: 20%;" show="{{ show }}" bind:close="onClose">{{info.dec}}
+        </van-popup>
+      </view>
+    </view>
+  </van-row>
+</view>
+<view class="content card-p">
+  <view class="capacity m-b card-p border-ra">
+    <view class="card-title">个人功能</view>
+    <van-row>
+      <van-grid clickable gutter="{{ 10 }}" border="{{false}}" column-num="3">
+        <van-grid-item link-type="navigateTo" url="/pages/daka/daka?project={{infoStr}}">
+          <view slot="icon" class="iconfont icon-region"></view>
+          <view slot="text">出勤打卡</view>
+        </van-grid-item>
+        <van-grid-item link-type="navigateTo" url="/pages/queqin/queqin?project={{infoStr}}">
+          <view slot="icon" class="iconfont icon-buka"></view>
+          <view slot="text">缺勤补卡</view>
+        </van-grid-item>
+        <van-grid-item link-type="navigateTo" url="/pages/dashboard/index?project={{infoStr}}">
+          <view slot="icon" class="iconfont icon-jiaban"></view>
+          <view slot="text">加班申报</view>
+        </van-grid-item>
+        <van-grid-item link-type="navigateTo" url="/pages/workPoints/workPoints?project={{infoStr}}">
+          <view slot="icon" class="iconfont icon-data-view"></view>
+          <view slot="text">工天报表</view>
+        </van-grid-item>
+        <van-grid-item link-type="navigateTo" url="/pages/workReport/workReport?operate=add&project={{infoStr}}">
+          <view slot="icon" class="iconfont icon-survey"></view>
+          <view slot="text">工作报告</view>
+        </van-grid-item>
+        <van-grid-item link-type="navigateTo" url="/pages/zhiliangjiandu/zhiliangjiandu?project={{infoStr}}">
+          <view slot="icon" class="iconfont icon-jianguanfengkong"></view>
+          <view slot="text">质量监督</view>
+        </van-grid-item>
+      </van-grid>
+    </van-row>
+  </view>
+
+  <view class="capacity card-p  border-ra">
+    <view class="card-title">管理功能</view>
+    <van-row>
+      <van-grid clickable gutter="{{ 10 }}" border="{{false}}" column-num="3">
+        <van-grid-item link-type="navigateTo" url="/pages/dashboard/index?project={{infoStr}}">
+          <view slot="icon" class="iconfont icon-dicengjiagou"></view>
+          <view slot="text">工人资料</view>
+        </van-grid-item>
+        <van-grid-item link-type="navigateTo" url="/pages/dashboard/index?project={{infoStr}}">
+          <view slot="icon" class="iconfont icon-shujujianguan"></view>
+          <view slot="text">工天报表</view>
+        </van-grid-item>
+        <van-grid-item link-type="navigateTo" url="/pages/dashboard/index?project={{infoStr}}">
+          <view slot="icon" class="iconfont icon-audit"></view>
+          <view slot="text">补卡审核</view>
+        </van-grid-item>
+        <van-grid-item link-type="navigateTo" url="/pages/dashboard/index?project={{infoStr}}">
+          <view slot="icon" class="iconfont icon-yinzhangrenzheng"></view>
+          <view slot="text">加班审核</view>
+        </van-grid-item>
+        <van-grid-item link-type="navigateTo" url="/pages/dashboard/index?project={{infoStr}}">
+          <view slot="icon" class="iconfont icon-history"></view>
+          <view slot="text">工作记录</view>
+        </van-grid-item>
+        <van-grid-item link-type="navigateTo" url="/pages/dashboard/index?project={{infoStr}}">
+          <view slot="icon" class="iconfont icon-bingtutubiao"></view>
+          <view slot="text">出勤情况</view>
+        </van-grid-item>
+      </van-grid>
+    </van-row>
+  </view> 
+</view>

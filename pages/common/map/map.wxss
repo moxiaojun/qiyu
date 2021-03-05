@@ -1,0 +1,9 @@
+/* pages/common/map.wxss */
+.bottom{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20rpx;
+  height: 80rpx;
+  background-color: #FFF;
+}

@@ -1,0 +1,13 @@
+/* pages/common/camera/camera.wxss */
+.bottom{ 
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 91%;
+  padding: 38rpx;
+  background-color: rgb(226, 226, 226);
+}
+.bottom .btn{
+  padding: 40rpx 2.5rem;
+}

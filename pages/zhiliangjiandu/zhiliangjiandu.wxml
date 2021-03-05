@@ -1,0 +1,114 @@
+<!--pages/zhiliangjiandu/zhiliangjiandu.wxml-->
+<view class="head">
+  <view class="title m-b">
+    <view class="font-46">36</view>
+    <view>品质记录总数</view>
+  </view>
+  <view class="head-content border-ra center">
+    <van-row gutter="20">
+      <van-col span="12">
+        <view class="font-s-28">20</view>
+        <view class=" m-t">品质五星</view>
+      </van-col>
+      <van-col span="12">
+        <view class="font-s-28">10</view>
+        <view class=" m-t">差评一星</view>
+      </van-col>
+    </van-row>
+  </view>
+</view>
+<view class="list-box">
+  <view class="content border-ra ">
+    <van-collapse value="{{ activeNames }}" bind:change="onChange">
+      <van-collapse-item name="1">
+        <view slot="title">2020-03-03 5条</view>
+        <van-cell custom-class="list-cell" use-label-slot center url="/pages/jianduxiangqin/jianduxiangqin?id={{1}}">
+          <van-image slot="icon" custom-class="heard-img" width="3.4rem" height="3.4rem" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+          <view slot="label" class="list-content"> 
+              <view class="m-b">张晓明 <van-tag custom-class="m-l" plain type="primary" size="medium">一级工</van-tag>
+              </view>
+              <view>
+                <van-rate value="{{ 3 }}" size="{{ 20 }}" color="#ffd21f" void-color="#eee" void-icon="star"
+                  bind:change="onChange" />
+              </view> 
+          </view>
+          <view class="list-right" slot="right-icon">
+              <text class="list-right-text">已回复</text>
+              <van-icon size="16" color="#929292" name="arrow" /> 
+          </view>
+        </van-cell> 
+        <van-cell custom-class="list-cell" use-label-slot center url="/pages/jianduxiangqin/jianduxiangqin">
+          <van-image slot="icon" custom-class="heard-img" width="3.4rem" height="3.4rem" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+          <view slot="label" class="list-content"> 
+              <view class="m-b">张晓明 <van-tag custom-class="m-l" plain type="primary" size="medium">一级工</van-tag>
+              </view>
+              <view>
+                <van-rate value="{{ 3 }}" size="{{ 20 }}" color="#ffd21f" void-color="#eee" void-icon="star"
+                  bind:change="onChange" />
+              </view> 
+          </view>
+          <view class="list-right" slot="right-icon">
+              <text class="list-right-text list-right-hufu">待回复</text>
+              <van-icon size="16" color="#929292" name="arrow" /> 
+          </view>
+        </van-cell> 
+        <van-cell custom-class="list-cell" use-label-slot center url="/pages/jianduxiangqin/jianduxiangqin">
+          <van-image slot="icon" custom-class="heard-img" width="3.4rem" height="3.4rem" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+          <view slot="label" class="list-content"> 
+              <view class="m-b">张晓明 <van-tag custom-class="m-l" plain type="primary" size="medium">一级工</van-tag>
+              </view>
+              <view>
+                <van-rate value="{{ 3 }}" size="{{ 20 }}" color="#ffd21f" void-color="#eee" void-icon="star"
+                  bind:change="onChange" />
+              </view> 
+          </view>
+          <view class="list-right" slot="right-icon">
+              <text class="list-right-text list-right-hufu">待回复</text>
+              <van-icon size="16" color="#929292" name="arrow" /> 
+          </view>
+        </van-cell> 
+        <van-cell custom-class="list-cell" use-label-slot center url="/pages/jianduxiangqin/jianduxiangqin">
+          <van-image slot="icon" custom-class="heard-img" width="3.4rem" height="3.4rem" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+          <view slot="label" class="list-content"> 
+              <view class="m-b">张晓明 <van-tag custom-class="m-l" plain type="primary" size="medium">一级工</van-tag>
+              </view>
+              <view>
+                <van-rate value="{{ 3 }}" size="{{ 20 }}" color="#ffd21f" void-color="#eee" void-icon="star"
+                  bind:change="onChange" />
+              </view> 
+          </view>
+          <view class="list-right" slot="right-icon">
+              <text class="list-right-text list-right-hufu">待回复</text>
+              <van-icon size="16" color="#929292" name="arrow" /> 
+          </view>
+        </van-cell> 
+      </van-collapse-item>
+    </van-collapse>
+  </view> 
+  <view class="content border-ra ">
+    <van-collapse value="{{ activeNames }}" bind:change="onChange">
+      <van-collapse-item name="12">
+        <view slot="title">2020-03-03 5条</view>
+        <van-cell custom-class="list-cell" use-label-slot center url="/pages/jianduxiangqin/jianduxiangqin">
+          <van-image slot="icon" custom-class="heard-img" width="3.4rem" height="3.4rem" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+          <view slot="label" class="list-content"> 
+              <view class="m-b">张晓明 <van-tag custom-class="m-l" plain type="primary" size="medium">一级工</van-tag>
+              </view>
+              <view>
+                <van-rate value="{{ 3 }}" size="{{ 20 }}" color="#ffd21f" void-color="#eee" void-icon="star"
+                  bind:change="onChange" />
+              </view> 
+          </view>
+          <view class="list-right" slot="right-icon">
+              <text class="list-right-text list-right-hufu">待回复</text>
+              <van-icon size="16" color="#929292" name="arrow" /> 
+          </view>
+        </van-cell> 
+      </van-collapse-item>
+    </van-collapse>
+  </view> 
+</view>
+
+<view class="bottom"> 
+  <view class="btn-add" bindtap="add">新增质量监控</view>
+</view>
